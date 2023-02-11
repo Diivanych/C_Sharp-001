@@ -20,7 +20,7 @@ int x = xa, y = xb;
 
 int count = 0;
 
-while(count < 10000)
+while(count < 100000)
 {
     int what = new Random().Next(0, 3);  //  генератор случайных чисел 0 - 1 - 2
     
@@ -46,3 +46,6 @@ while(count < 10000)
     count++;
     
 }
+
+Console.SetCursorPosition(0, 32);
+Console.WriteLine("Построене треугольника Серпинского на 100000 итераций");
